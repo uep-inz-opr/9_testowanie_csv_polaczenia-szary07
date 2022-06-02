@@ -1,12 +1,14 @@
-import csv
+if __name__ == "__main__":
 
-with open('phoneCalls.csv', 'r') as fin:
-    reader = csv.reader(fin, delimiter = ",")
-    headers = next(reader)
+    import csv
 
-    for row in reader:
-        print(row)
-        from_subsr = int([0])
-        if from_subsr not in call_dict_sum:
+    with open('phoneCalls.csv', 'r') as fin:
+     reader = csv.reader(fin, delimiter = ",")
+     headers = next(reader)
 
-        calls_dict_sum[from_subsr] += int(row[3])
+     for row in reader:
+         print(row)
+         from_subsr = int([0])
+         if from_subsr not in call_dict_sum:
+
+         calls_dict_sum[from_subsr] += int(row[3])
